@@ -36,4 +36,8 @@
     <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/privacy-policy.html</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/about.html</loc>
+    <priority>0.4</priority>
+  </url>
 </urlset>
