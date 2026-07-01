@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter — Length, Weight, Temperature &amp; More</title>
+<meta name="description" content="Fast, free unit converter for length, weight, temperature, volume, area, speed, time and data. No sign-up, works offline-capable, instant results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="wordmark">
+      <span class="wordmark-icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="28" height="28">
+          <path d="M4 20 L36 20 M4 20 L4 12 M10 20 L10 15 M16 20 L16 12 M22 20 L22 15 M28 20 L28 12 M34 20 L34 15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>UNIT&nbsp;/&nbsp;CONVERTER</span>
+    </div>
+    <p class="header-tagline">Scaled instruments for everyday measurement</p>
+  </div>
+</header>
+
+<main>
+  <section class="converter-card" aria-labelledby="converter-heading">
+
+    <nav class="category-rail" aria-label="Measurement category">
+      <button class="cat-btn active" data-category="length" aria-pressed="true">
+        <span class="cat-index">§1</span> Length
+      </button>
+      <button class="cat-btn" data-category="weight" aria-pressed="false">
+        <span class="cat-index">§2</span> Weight
+      </button>
+      <button class="cat-btn" data-category="temperature" aria-pressed="false">
+        <span class="cat-index">§3</span> Temperature
+      </button>
+      <button class="cat-btn" data-category="volume" aria-pressed="false">
+        <span class="cat-index">§4</span> Volume
+      </button>
+      <button class="cat-btn" data-category="area" aria-pressed="false">
+        <span class="cat-index">§5</span> Area
+      </button>
+      <button class="cat-btn" data-category="speed" aria-pressed="false">
+        <span class="cat-index">§6</span> Speed
+      </button>
+      <button class="cat-btn" data-category="time" aria-pressed="false">
+        <span class="cat-index">§7</span> Time
+      </button>
+      <button class="cat-btn" data-category="data" aria-pressed="false">
+        <span class="cat-index">§8</span> Data
+      </button>
+    </nav>
+
+    <h1 id="converter-heading" class="sr-only">Unit Converter</h1>
+
+    <div class="ruler-divider" aria-hidden="true">
+      <svg width="100%" height="14" preserveAspectRatio="none">
+        <line x1="0" y1="7" x2="100%" y2="7" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="convert-panel">
+      <div class="field-block">
+        <label for="from-value">Value</label>
+        <input type="number" id="from-value" inputmode="decimal" value="1" autocomplete="off">
+        <select id="from-unit" aria-label="Convert from unit"></select>
+      </div>
+
+      <button id="swap-btn" class="swap-btn" aria-label="Swap units" title="Swap units">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path d="M7 10 L12 5 L17 10 M12 5.5 L12 19 M17 14 L12 19 L7 14 M12 18.5 L12 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="field-block">
+        <label for="to-value">Result</label>
+        <input type="text" id="to-value" readonly tabindex="-1">
+        <select id="to-unit" aria-label="Convert to unit"></select>
+      </div>
+    </div>
+
+    <p class="conversion-note" id="conversion-note" aria-live="polite"></p>
+
+    <div class="tick-strip" aria-hidden="true"></div>
+
+    <div class="quick-ref" id="quick-ref">
+      <span class="quick-ref-label">Common conversions —</span>
+      <div class="quick-ref-list" id="quick-ref-list"></div>
+    </div>
+
+  </section>
+
+  <section class="about-blurb">
+    <p>All calculations run locally in your browser — no data leaves your device. Precision is held to 6 significant figures for most scales, and adjusted for temperature offsets automatically.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Built for quick reference. No accounts, no tracking of inputs.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
