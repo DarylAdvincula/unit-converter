@@ -230,7 +230,11 @@ function switchCategory(category) {
   catButtons.forEach(btn => {
     const isActive = btn.dataset.category === category;
     btn.classList.toggle('active', isActive);
-    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    if (isActive) {
+      btn.setAttribute('aria-current', 'page');
+    } else {
+      btn.removeAttribute('aria-current');
+    }
   });
 }
 

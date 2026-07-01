@@ -6,7 +6,7 @@
   --accent: #ff6b35;
   --paper: #e8eef2;
   --paper-dim: #9fb4c4;
-  --paper-faint: #6f8ba0;
+  --paper-faint: #9fb4c4;
 
   --font-display: 'Space Mono', 'Courier New', monospace;
   --font-body: 'Inter', -apple-system, sans-serif;
@@ -135,7 +135,7 @@ main {
 .cat-index {
   font-family: var(--font-display);
   font-size: 0.7rem;
-  color: var(--paper-faint);
+  color: #b9cbd8;
 }
 
 .cat-btn:hover {
@@ -151,7 +151,7 @@ main {
 
 .cat-btn.active .cat-index {
   color: var(--navy-deep);
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .cat-btn:focus-visible,
