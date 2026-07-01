@@ -234,8 +234,15 @@ function switchCategory(category) {
   });
 }
 
+// Category rail uses real <a href> links (one static page per category)
+// for crawlability/SEO. Prevent a reload if the link points to the page
+// that's already active.
 catButtons.forEach(btn => {
-  btn.addEventListener('click', () => switchCategory(btn.dataset.category));
+  btn.addEventListener('click', (e) => {
+    if (btn.dataset.category === currentCategory) {
+      e.preventDefault();
+    }
+  });
 });
 
 fromValueEl.addEventListener('input', runConversion);
@@ -257,5 +264,6 @@ swapBtn.addEventListener('click', () => {
   renderQuickRef(currentCategory);
 });
 
-// Initialize
-switchCategory('length');
+// Initialize based on this page's category (set via <body data-category="...">)
+const initialCategory = document.body.dataset.category || 'length';
+switchCategory(initialCategory);

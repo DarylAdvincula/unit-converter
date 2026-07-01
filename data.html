@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unit Converter — Length, Weight, Temperature & More</title>
-<meta name="description" content="Free unit converter for length, weight, temperature, volume, area, speed, time and data. Instant results, no sign-up, works in your browser.">
+<title>Data Storage Converter — MB, GB, TB, Bytes</title>
+<meta name="description" content="Convert digital storage between bytes, kilobytes, megabytes, gigabytes, and terabytes. Free instant data size converter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-category="length">
+<body data-category="data">
 
 <div class="grid-backdrop" aria-hidden="true"></div>
 
@@ -32,7 +32,7 @@
   <section class="converter-card" aria-labelledby="converter-heading">
 
     <nav class="category-rail" aria-label="Measurement category">
-      <a class="cat-btn active" href="index.html" data-category="length" aria-pressed="true">
+      <a class="cat-btn" href="index.html" data-category="length" aria-pressed="false">
         <span class="cat-index">§1</span> Length
       </a>
       <a class="cat-btn" href="weight.html" data-category="weight" aria-pressed="false">
@@ -53,12 +53,12 @@
       <a class="cat-btn" href="time.html" data-category="time" aria-pressed="false">
         <span class="cat-index">§7</span> Time
       </a>
-      <a class="cat-btn" href="data.html" data-category="data" aria-pressed="false">
+      <a class="cat-btn active" href="data.html" data-category="data" aria-pressed="true">
         <span class="cat-index">§8</span> Data
       </a>
     </nav>
 
-    <h1 id="converter-heading" class="sr-only">Length Converter</h1>
+    <h1 id="converter-heading" class="sr-only">Data Storage Converter</h1>
 
     <div class="ruler-divider" aria-hidden="true">
       <svg width="100%" height="14" preserveAspectRatio="none">
@@ -98,29 +98,29 @@
   </section>
 
   <section class="page-content">
-    <h2>About the Length Converter</h2>
-    <p>Convert between meters, feet, inches, miles, kilometers, and more. This tool handles both metric and imperial length units, so whether you're reading a recipe in centimeters or a road sign in miles, you can get an exact figure in seconds.</p>
+    <h2>About the Data Storage Converter</h2>
+    <p>Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes. Useful for understanding file sizes, storage plans, download times, or memory specifications.</p>
     <h2>How the conversion works</h2>
-    <p>Length conversions are based on the meter as the international standard (SI) unit. Every other unit here — feet, inches, miles, yards — is defined as a fixed multiple of the meter, so the math is a straightforward multiplication or division. No rounding tricks, no approximations: this converter uses the internationally defined conversion factors (for example, exactly 1609.344 meters per mile).</p>
+    <p>This converter uses binary (1024-based) conversions, matching how operating systems typically report file and storage sizes — 1 kilobyte = 1024 bytes, 1 megabyte = 1024 kilobytes, and so on. Some manufacturers use decimal (1000-based) figures for marketing storage capacity, which is why an advertised '1TB' drive often shows slightly less space in your operating system.</p>
     <h2>Frequently asked questions</h2>
     <dl>
       <div class="faq-item">
-        <dt>How many feet are in a meter?</dt>
-        <dd>One meter equals approximately 3.28084 feet. This is the standard conversion factor used in construction, real estate, and international measurement contexts.</dd>
+        <dt>Why does my 1TB drive show less than 1TB of space?</dt>
+        <dd>Storage manufacturers typically use decimal units (1TB = 1,000,000,000,000 bytes) while operating systems report in binary units (1024-based), so the same drive shows a smaller number in binary terms — around 931 GB.</dd>
       </div>
       <div class="faq-item">
-        <dt>What's the difference between a mile and a nautical mile?</dt>
-        <dd>A standard (statute) mile is 1,609.344 meters, used for road distances. A nautical mile is 1,852 meters, used in aviation and maritime navigation, based on one minute of latitude on the Earth's surface.</dd>
+        <dt>How many megabytes are in a gigabyte?</dt>
+        <dd>There are 1,024 megabytes in one gigabyte, using the binary standard this converter follows.</dd>
       </div>
       <div class="faq-item">
-        <dt>Why do some countries use inches while others use centimeters?</dt>
-        <dd>It comes down to historical measurement systems — the US, UK, and a few other countries still use the imperial system for everyday length, while most of the world adopted the metric system as an international standard in the 19th and 20th centuries.</dd>
+        <dt>What's the difference between a bit and a byte?</dt>
+        <dd>A byte is 8 bits. Internet speeds are usually advertised in bits per second (Mbps), while file sizes are usually shown in bytes (MB), which is why download speed and file size can look mismatched at first glance.</dd>
       </div>
     </dl>
   </section>
 
   <section class="site-nav-footer">
-    <p>Also try: <a href="weight.html">Weight converter</a> · <a href="temperature.html">Temperature converter</a> · <a href="volume.html">Volume converter</a> · <a href="area.html">Area converter</a> · <a href="speed.html">Speed converter</a> · <a href="time.html">Time converter</a> · <a href="data.html">Data converter</a></p>
+    <p>Also try: <a href="index.html">Length converter</a> · <a href="weight.html">Weight converter</a> · <a href="temperature.html">Temperature converter</a> · <a href="volume.html">Volume converter</a> · <a href="area.html">Area converter</a> · <a href="speed.html">Speed converter</a> · <a href="time.html">Time converter</a></p>
   </section>
 </main>
 

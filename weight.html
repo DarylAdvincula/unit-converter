@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unit Converter — Length, Weight, Temperature & More</title>
-<meta name="description" content="Free unit converter for length, weight, temperature, volume, area, speed, time and data. Instant results, no sign-up, works in your browser.">
+<title>Weight Converter — kg, lbs, oz, stone, tonnes</title>
+<meta name="description" content="Convert weight and mass between kilograms, pounds, ounces, stone, grams, and metric tonnes instantly. Free, accurate, no sign-up required.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-category="length">
+<body data-category="weight">
 
 <div class="grid-backdrop" aria-hidden="true"></div>
 
@@ -32,10 +32,10 @@
   <section class="converter-card" aria-labelledby="converter-heading">
 
     <nav class="category-rail" aria-label="Measurement category">
-      <a class="cat-btn active" href="index.html" data-category="length" aria-pressed="true">
+      <a class="cat-btn" href="index.html" data-category="length" aria-pressed="false">
         <span class="cat-index">§1</span> Length
       </a>
-      <a class="cat-btn" href="weight.html" data-category="weight" aria-pressed="false">
+      <a class="cat-btn active" href="weight.html" data-category="weight" aria-pressed="true">
         <span class="cat-index">§2</span> Weight
       </a>
       <a class="cat-btn" href="temperature.html" data-category="temperature" aria-pressed="false">
@@ -58,7 +58,7 @@
       </a>
     </nav>
 
-    <h1 id="converter-heading" class="sr-only">Length Converter</h1>
+    <h1 id="converter-heading" class="sr-only">Weight Converter</h1>
 
     <div class="ruler-divider" aria-hidden="true">
       <svg width="100%" height="14" preserveAspectRatio="none">
@@ -98,29 +98,29 @@
   </section>
 
   <section class="page-content">
-    <h2>About the Length Converter</h2>
-    <p>Convert between meters, feet, inches, miles, kilometers, and more. This tool handles both metric and imperial length units, so whether you're reading a recipe in centimeters or a road sign in miles, you can get an exact figure in seconds.</p>
+    <h2>About the Weight Converter</h2>
+    <p>Convert between kilograms, pounds, ounces, stone, grams, and metric tonnes. Useful for cooking, shipping, fitness tracking, or converting a doctor's chart from one system to another.</p>
     <h2>How the conversion works</h2>
-    <p>Length conversions are based on the meter as the international standard (SI) unit. Every other unit here — feet, inches, miles, yards — is defined as a fixed multiple of the meter, so the math is a straightforward multiplication or division. No rounding tricks, no approximations: this converter uses the internationally defined conversion factors (for example, exactly 1609.344 meters per mile).</p>
+    <p>This converter uses the kilogram as the base unit, since it's the SI standard for mass. Pounds, ounces, and stone are converted using their internationally agreed definitions (1 pound = 0.45359237 kg exactly), so results stay accurate even at large or very small values.</p>
     <h2>Frequently asked questions</h2>
     <dl>
       <div class="faq-item">
-        <dt>How many feet are in a meter?</dt>
-        <dd>One meter equals approximately 3.28084 feet. This is the standard conversion factor used in construction, real estate, and international measurement contexts.</dd>
+        <dt>How many pounds are in a kilogram?</dt>
+        <dd>One kilogram equals approximately 2.20462 pounds. This exact ratio (1 lb = 0.45359237 kg) has been the international standard since 1959.</dd>
       </div>
       <div class="faq-item">
-        <dt>What's the difference between a mile and a nautical mile?</dt>
-        <dd>A standard (statute) mile is 1,609.344 meters, used for road distances. A nautical mile is 1,852 meters, used in aviation and maritime navigation, based on one minute of latitude on the Earth's surface.</dd>
+        <dt>What is a stone in weight?</dt>
+        <dd>A stone is a British imperial unit equal to 14 pounds, or about 6.35 kilograms. It's still commonly used in the UK and Ireland for body weight.</dd>
       </div>
       <div class="faq-item">
-        <dt>Why do some countries use inches while others use centimeters?</dt>
-        <dd>It comes down to historical measurement systems — the US, UK, and a few other countries still use the imperial system for everyday length, while most of the world adopted the metric system as an international standard in the 19th and 20th centuries.</dd>
+        <dt>Is mass the same as weight?</dt>
+        <dd>Technically no — mass measures the amount of matter in an object, while weight measures the force of gravity on it. But in everyday conversions like this one, the terms are used interchangeably since we're on Earth.</dd>
       </div>
     </dl>
   </section>
 
   <section class="site-nav-footer">
-    <p>Also try: <a href="weight.html">Weight converter</a> · <a href="temperature.html">Temperature converter</a> · <a href="volume.html">Volume converter</a> · <a href="area.html">Area converter</a> · <a href="speed.html">Speed converter</a> · <a href="time.html">Time converter</a> · <a href="data.html">Data converter</a></p>
+    <p>Also try: <a href="index.html">Length converter</a> · <a href="temperature.html">Temperature converter</a> · <a href="volume.html">Volume converter</a> · <a href="area.html">Area converter</a> · <a href="speed.html">Speed converter</a> · <a href="time.html">Time converter</a> · <a href="data.html">Data converter</a></p>
   </section>
 </main>
 

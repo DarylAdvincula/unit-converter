@@ -2,5 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/weight.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/temperature.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/volume.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/area.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/speed.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/time.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/data.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://unit-converter.kyledaryladvincula2004.workers.dev/privacy-policy.html</loc>
+    <priority>0.3</priority>
   </url>
 </urlset>
